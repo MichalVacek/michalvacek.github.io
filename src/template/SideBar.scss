@@ -1,0 +1,25 @@
+.b-a {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 6px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+ }
+
+.menu-toggle {
+    @extend .b-a;
+    position: fixed;
+    left: 12px;
+    top: 24px;
+    &:before {
+       @extend .b-a;
+       top: -8px;
+    }
+    &:after {
+       @extend .b-a;
+       top: 8px;
+    }
+}
