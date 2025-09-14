@@ -1,0 +1,23 @@
+.top-navigation {
+    background-color: #29396e;
+    overflow: visible;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    height: 120px;
+    align-items: center;
+}
+
+.whole-page {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}

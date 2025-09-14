@@ -1,0 +1,42 @@
+.styled-button {
+    height: 50px;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    height: 50px;
+    padding: 17px 40px;
+    border: 0;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    cursor: pointer;
+    display: block;
+    background-color: auto;
+    position: sticky;
+}
+
+.dropdown-item {
+    width: 100%;
+}
+
+.dropdown-item [class = dropdown-button]{
+    border-radius: 0;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    top: 50px;
+}

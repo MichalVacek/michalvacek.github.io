@@ -2,6 +2,7 @@ import { useState, useTransition } from 'react';
 import Layout from './Layout.js';
 import Home from './pages/Home.js';
 import Unknown from './pages/Unknown.js';
+import About from './pages/About.js';
 
 export default function Router() {
     const [page, setPage] = useState('/');
@@ -20,10 +21,13 @@ export default function Router() {
                 <Home />
             );
             break;
-        default:
+        case '/about':
             content = (
-                <Unknown />
+                <About />
             );
+            break;
+        default:
+            navigate('/');
     }
     return (
         <Layout navigate={navigate}>
